@@ -27,11 +27,60 @@
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр работ</h2>
-            <!-- Здесь будет форма -->
+            <h3>Стоимость:</h3>
+
+            <form action="" class="form-setting-works">
+
+              <input type="range" class="price-control" min="0" max="20000">
+              <div class="form-group">
+                <label for="start-price">От</label>
+                <input type="text" class="price-field" id="start-price">
+                <label for="end-price">До</label>
+                <input type="text" class="price-field" id="end-price">
+              </div>
+              
+              <h3>Сетка:</h3>
+              <div class="form-group">
+                <input type="radio" class="grid-check-button" id="adaptive-grid" value="adaptive" name="grid-type" checked>
+                <label for="adaptive-grid">Адаптивная</label>
+                <input type="radio" class="grid-check-button" id="fix-grid" value="fix" name="grid-type">
+                <label for="fix-grid">Фиксированная</label>
+                <input type="radio" class="grid-check-button" id="rubber-grid" value="rubber" name="grid-type">
+                <label for="rubber-grid">Резиновая</label>
+              </div>
+
+              <h3>Особенности:</h3>
+              <div class="form-group">
+                <input type="checkbox" name="pattern-features" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
+                <label for="slider-feature">Слайдер</label>
+                <input type="checkbox" name="pattern-features" value="features-block" class="pattern-checkbox-features" id="block-feature">
+                <label for="block-feature">Блок преимуществ</label>
+                <input type="checkbox" name="pattern-features" value="news" class="pattern-checkbox-features" id="news-feature" checked>
+                <label for="news-feature">Новости</label>
+                <input type="checkbox" name="pattern-features" value="gallery" class="pattern-checkbox-features" id="gallery-feature">
+                <label for="gallery-feature">Галерея</label>
+                <input type="checkbox" name="pattern-features" value="basket" class="pattern-checkbox-features" id="basket-feature">
+                <label for="basket-feature">Корзина</label>
+              </div>
+
+              <input type="submit" class="button-show" value="Показать">
+            </form>
+
         </section>
 
         <section class="works">
             <h2 class="visually-hidden">Наши работы</h2>
+            <div class="more-filtres">
+              <h3>Сортировать</h3>
+              <input type="radio" class="works-sort" id="by-price" value="by-price" name="sort-type" checked>
+              <label for="by-price">По цене</label>
+              <input type="radio" class="works-sort" id="by-type" value="by-type" name="sort-type">
+              <label for="by-type">По типу</label>
+              <input type="radio" class="works-sort" id="by-name" value="by-name" name="sort-type">
+              <label for="by-name">По названию</label>
+              <input type="radio" class="sort-reverse" value="asc" name="sort-reverse" checked>
+              <input type="radio" class="sort-reverse" value="desc" name="sort-reverse">
+            </div>
             <ul class="works-list">
                 <li class="works-item">
                   <article>
