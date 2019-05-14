@@ -24,144 +24,172 @@
     </header>
 
     <main>
-        <section class="filters">
-            <h2 class="visually-hidden">Фильтр работ</h2>
-            <form class="form-setting-works">
-              <ul class="form-setting-list">
-                <li class="form-setting-item">
-                  <fieldset>
-                    <legend>Стоимость:</legend>
-                    <!-- Здесь будет ползунок -->
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр работ</h2>
+        <form class="form-setting-works">
+          <ul class="form-setting-list">
+            <li class="form-setting-item">
+              <fieldset>
+                <legend>Стоимость:</legend>
+                <ul class="price-choice-list">
+                  <!-- Здесь будет ползунок -->
+                  <li class="price-choice-item">
                     <label for="start-price">От</label>
                     <input type="text" class="price-field" id="start-price">
                     <label for="end-price">До</label>
                     <input type="text" class="price-field" id="end-price">
-                  </fieldset>
-                </li>
-                <li class="form-setting-item">
-                  <fieldset>
-                    <legend>Сетка:</legend>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="form-setting-item">
+              <fieldset>
+                <legend>Сетка:</legend>
+                <ul class="grid-choice-list">
+                  <li class="grid-choice-item">
                     <input type="radio" class="grid-check-button" id="adaptive-grid" value="adaptive" name="grid-type" checked>
                     <label for="adaptive-grid">Адаптивная</label>
+                  </li>
+                  <li class="grid-choice-item">
                     <input type="radio" class="grid-check-button" id="fix-grid" value="fix" name="grid-type">
                     <label for="fix-grid">Фиксированная</label>
+                  </li>
+                  <li class="grid-choice-item">
                     <input type="radio" class="grid-check-button" id="rubber-grid" value="rubber" name="grid-type">
                     <label for="rubber-grid">Резиновая</label>
-                  </fieldset>
-                </li>
-                <li class="form-setting-item">
-                  <fieldset>
-                    <legend>Особенности:</legend>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="form-setting-item">
+              <fieldset>
+                <legend>Особенности:</legend>
+                <ul class="features-choice-list">
+                  <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
                     <label for="slider-feature">Слайдер</label>
+                  </li>
+                  <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features" value="features-block" class="pattern-checkbox-features" id="block-feature">
                     <label for="block-feature">Блок преимуществ</label>
+                  </li>
+                  <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features" value="news" class="pattern-checkbox-features" id="news-feature" checked>
                     <label for="news-feature">Новости</label>
+                  </li>
+                  <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features" value="gallery" class="pattern-checkbox-features" id="gallery-feature">
                     <label for="gallery-feature">Галерея</label>
+                  </li>
+                  <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features" value="basket" class="pattern-checkbox-features" id="basket-feature">
                     <label for="basket-feature">Корзина</label>
-                  </fieldset>
-                </li>
-              </ul>
-              <button class="button-show">Показать</button>
-            </form>
-        </section>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+          </ul>
+          <button class="button-show">Показать</button>
+        </form>
+      </section>
 
-        <section class="works">
-            <h2 class="visually-hidden">Наши работы</h2>
-            <div class="more-filtres">
-              <h3>Сортировать</h3>
-              <a href="#" class="sort-type">По цене</a>
-              <a href="#" class="sort-type">По типу</a>
-              <a href="#" class="sort-type">По названию</label>
-              <a href="#" class="sort-asc">По возрастанию</a>
-              <a href="#" class="sort-desc">По убыванию</a>
-            </div>
-            <ul class="works-list">
-                <li class="works-item">
-                  <article>
-                    <img src="sedona-site-small.jpg" alt="Сайт Sedona">
-                    <div>
-                        <h3>Sedona</h3>
-                        <p>Информационный сайт для туристов</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </div>
-                  </article>
-                </li>
-                <li class="works-item">
-                  <article>
-                    <img src="pink-site-small.jpg" alt="Сайт Sedona">
-                    <div>
-                        <h3>Pink app</h3>
-                        <p>Продуктовый лендинг приложения для iOS и Android</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </div>
-                  </article>
-                </li>
-                <li class="works-item">
-                    <article>
-                      <img src="barbershop-site-small.jpg" alt="Сайт Sedona">
-                      <div>
-                          <h3>Barbershop</h3>
-                          <p>Сайт салона красоты для мужчин, да.</p>
-                          <a class="button" href="#">9 900 руб.</a>
-                      </div>
-                    </article>
-                </li>
-                <li class="works-item">
-                    <article>
-                      <img src="mishka-site-small.jpg" alt="Сайт Sedona">
-                      <div>
-                          <h3>Mishka</h3>
-                          <p>Интернет-магазин вязаных игрушек</p>
-                          <a class="button" href="#">9 900 руб.</a>
-                      </div>
-                    </article>
-                </li>
-                <li class="works-item">
-                    <article>
-                      <img src="aplus-site-small.jpg" alt="Сайт Sedona">
-                      <div>
-                          <h3>A plus</h3>
-                          <p>Лендинг курсов повышения квалификации</p>
-                          <a class="button" href="#">9 900 руб.</a>
-                      </div>
-                    </article>
-                </li>
-                <li class="works-item">
-                    <article>
-                      <img src="aplus-site-small.jpg" alt="Сайт Sedona">
-                      <div>
-                          <h3>Кваст</h3>
-                          <p>Промо-сайт производителя крафтового кваса</p>
-                          <a class="button" href="#">9 900 руб.</a>
-                      </div>
-                    </article>
-                </li>
-            </ul>
-            <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-            </ul>
-        </section>
+      <section class="works">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <div class="more-filtres">
+          <h3>Сортировать</h3>
+          <ul class="sort-type-list">
+            <li class="sort-type-item"><a href="#">По цене</a></li>
+            <li class="sort-type-item"><a href="#">По типу</a></li>
+            <li class="sort-type-item"><a href="#">По названию</a></li>
+          </ul>
+          <ul class="sort-order-list">
+            <li class="sort-order-item sort-asc"><a href="#">По возрастанию</a></li>
+            <li class="sort-order-item sort-desc"><a href="#">По убыванию</a></li>
+          </ul>
+        </div>
+        <ul class="works-list">
+          <li class="works-item">
+            <article>
+              <img src="sedona-site-small.jpg" alt="Сайт Sedona">
+              <div>
+                  <h3>Sedona</h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="works-item">
+            <article>
+              <img src="pink-site-small.jpg" alt="Сайт Sedona">
+              <div>
+                  <h3>Pink app</h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="works-item">
+              <article>
+                <img src="barbershop-site-small.jpg" alt="Сайт Sedona">
+                <div>
+                    <h3>Barbershop</h3>
+                    <p>Сайт салона красоты для мужчин, да.</p>
+                    <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </article>
+          </li>
+          <li class="works-item">
+              <article>
+                <img src="mishka-site-small.jpg" alt="Сайт Sedona">
+                <div>
+                    <h3>Mishka</h3>
+                    <p>Интернет-магазин вязаных игрушек</p>
+                    <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </article>
+          </li>
+          <li class="works-item">
+              <article>
+                <img src="aplus-site-small.jpg" alt="Сайт Sedona">
+                <div>
+                    <h3>A plus</h3>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </article>
+          </li>
+          <li class="works-item">
+              <article>
+                <img src="aplus-site-small.jpg" alt="Сайт Sedona">
+                <div>
+                    <h3>Кваст</h3>
+                    <p>Промо-сайт производителя крафтового кваса</p>
+                    <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </article>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
 
-        <section class="map">
-            <h2 class="visually-hidden">Как нас найти?</h2>
-            <div class="map-contacts">
-            <h3>nЁrds design studio</h3>
-            <address>
-                191186, Санкт-Петербург,<br>
-                Ул. Б. Конюшенная, д. 19/8
-            </address>
-            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
-            </div>
-            <!-- Здесь будет карта -->
-        </section>
+      <section class="map">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <div class="map-contacts">
+        <h3>nЁrds design studio</h3>
+        <address>
+            191186, Санкт-Петербург,<br>
+            Ул. Б. Конюшенная, д. 19/8
+        </address>
+        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
+        </div>
+        <!-- Здесь будет карта -->
+      </section>
 
     </main>
 
