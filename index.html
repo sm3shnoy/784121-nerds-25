@@ -49,9 +49,15 @@
           </li>
         </ul>
         <ul class="control-list">
-          <li class="control-item control-item-current"><button class="slider-control-button">1</button></li>
-          <li class="control-item"><button class="slider-control-button">2</button></li>
-          <li class="control-item"><button class="slider-control-button">3</button></li>
+          <li class="control-item control-item-current">
+            <button class="slider-control-button" aria-label="Первый слайд">1</button>
+          </li>
+          <li class="control-item">
+            <button class="slider-control-button" aria-label="Второй слайд">2</button>
+          </li>
+          <li class="control-item">
+            <button class="slider-control-button" aria-label="Третий слайд">3</button>
+          </li>
         </ul>
       </section>
 
@@ -123,16 +129,16 @@
         </div>
         <ul class="about-partners-list">
           <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-1.png" alt="Логотип HTMLAcademy" width="199" height="68"></a>
+            <a class="about-partners-link" href="#"><img src="img/logo-1.png" alt="Сайт HTMLAcademy" width="199" height="68"></a>
           </li>
           <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-2.png" alt="Логотип Барбершопа &laquo;Borodinski&raquo;" width="209" height="90"></a>
+            <a class="about-partners-link" href="#"><img src="img/logo-2.png" alt="Сайт Барбершопа &laquo;Borodinski&raquo;" width="209" height="90"></a>
           </li>
           <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-3.png" alt="Логотип PiNK" width="185" height="52"></a>
+            <a class="about-partners-link" href="#"><img src="img/logo-3.png" alt="Сайт PiNK" width="185" height="52"></a>
           </li>
           <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-4.png" alt="Логотип MiSHKA" width="173" height="84"></a>
+            <a class="about-partners-link" href="#"><img src="img/logo-4.png" alt="Сайт MiSHKA" width="173" height="84"></a>
           </li>
         </ul>
       </section>
@@ -145,10 +151,14 @@
             191186, Санкт-Петербург,<br>
             Ул. Б. Конюшенная, д. 19/8
           </address>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <p>
+            тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
           <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
         </div>
-        <!-- Здесь будет карта -->
+        <p>
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
       </section>
 
     </main>
@@ -178,6 +188,26 @@
         Скидка 10% для друзей из социальных сетей.
       </p>
     </footer>
+
+    <section class="modal modal-letter">
+      <h2>Напишите нам</h2>
+      <form class="letter-form" method="POST">
+        <p>
+          <label for="letter-username-field">Ваше имя:</label>
+          <input type="text" name="name" id="letter-username-field" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="letter-email-field">Ваше e-mail:</label>
+          <input type="text" name="email" id="letter-email-field" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма</label>
+          <textarea name="comment" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button letter-form-button" type="submit">Отправить</button>
+        <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+      </form>
+    </section>
 
   </body>
 </html>
