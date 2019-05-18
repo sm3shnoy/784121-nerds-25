@@ -68,30 +68,30 @@
                 <legend>Особенности:</legend>
                 <ul class="features-choice-list">
                   <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
+                    <input type="checkbox" name="pattern-features-slider" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
                     <label for="slider-feature">Слайдер</label>
                   </li>
                   <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features" value="features-block" class="pattern-checkbox-features" id="block-feature">
+                    <input type="checkbox" name="pattern-features-advantages-block" value="features-block" class="pattern-checkbox-features" id="block-feature">
                     <label for="block-feature">Блок преимуществ</label>
                   </li>
                   <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features" value="news" class="pattern-checkbox-features" id="news-feature" checked>
+                    <input type="checkbox" name="pattern-features-news" value="news" class="pattern-checkbox-features" id="news-feature" checked>
                     <label for="news-feature">Новости</label>
                   </li>
                   <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features" value="gallery" class="pattern-checkbox-features" id="gallery-feature">
+                    <input type="checkbox" name="pattern-features-gallery" value="gallery" class="pattern-checkbox-features" id="gallery-feature">
                     <label for="gallery-feature">Галерея</label>
                   </li>
                   <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features" value="basket" class="pattern-checkbox-features" id="basket-feature">
+                    <input type="checkbox" name="pattern-features-basket" value="basket" class="pattern-checkbox-features" id="basket-feature">
                     <label for="basket-feature">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
             </li>
           </ul>
-          <button class="button-show">Показать</button>
+          <button type="submit" class="button-show">Показать</button>
         </form>
       </section>
 
@@ -180,7 +180,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current">1</li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
@@ -190,15 +190,19 @@
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
         <div class="map-contacts">
-        <h3>nЁrds design studio</h3>
-        <address>
+          <h3>nЁrds design studio</h3>
+          <address>
             191186, Санкт-Петербург,<br>
             Ул. Б. Конюшенная, д. 19/8
-        </address>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
+          </address>
+          <p>
+            тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
         </div>
-        <!-- Здесь будет карта -->
+        <p>
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
       </section>
 
     </main>
@@ -228,6 +232,26 @@
         Скидка 10% для друзей из социальных сетей.
       </p>
     </footer>
+
+    <section class="modal modal-letter">
+      <h2>Напишите нам</h2>
+      <form class="letter-form" method="POST">
+        <p>
+          <label for="letter-username-field">Ваше имя:</label>
+          <input type="text" name="name" id="letter-username-field" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="letter-email-field">Ваше e-mail:</label>
+          <input type="text" name="email" id="letter-email-field" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма</label>
+          <textarea name="comment" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button letter-form-button" type="submit">Отправить</button>
+        <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+      </form>
+    </section>
 
   </body>
 </html>
