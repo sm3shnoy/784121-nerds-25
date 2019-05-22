@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -91,7 +94,7 @@
               </fieldset>
             </li>
           </ul>
-          <button type="submit" class="button-show">Показать</button>
+          <button type="submit" class="button button-show">Показать</button>
         </form>
       </section>
 
@@ -100,13 +103,13 @@
         <div class="more-filtres">
           <h3>Сортировать</h3>
           <ul class="sort-type-list">
-            <li class="sort-type-item"><a href="#">По цене</a></li>
+            <li class="sort-type-item"><a href="#" class="sort-type-current">По цене</a></li>
             <li class="sort-type-item"><a href="#">По типу</a></li>
             <li class="sort-type-item"><a href="#">По названию</a></li>
           </ul>
           <ul class="sort-order-list">
             <li class="sort-order-item sort-asc">
-              <a href="#">
+              <a href="#" class="sort-order-current">
                 <img src="img/icon-down-dir.svg" alt="Сортировка по возрастанию" width="11" height="10">
               </a>
             </li>
@@ -122,7 +125,7 @@
             <article>
               <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="360" height="576">
               <div>
-                <h3>Sedona</h3>
+                <h3><a href="#" class="work-link">Sedona</a></h3>
                 <p>Информационный сайт для туристов</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -132,7 +135,7 @@
             <article>
               <img src="img/img-pink.jpg" alt="Сайт Pink" width="360" height="576">
               <div>
-                <h3>Pink app</h3>
+                <h3><a href="#" class="work-link">Pink app</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -142,7 +145,7 @@
             <article>
               <img src="img/img-barbershop.jpg" alt="Сайт Barbershop" width="360" height="576">
               <div>
-                <h3>Barbershop</h3>
+                <h3><a href="#" class="work-link">Barbershop</a></h3>
                 <p>Сайт салона красоты для мужчин, да.</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -152,7 +155,7 @@
             <article>
               <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="360" height="576">
               <div>
-                <h3>Mishka</h3>
+                <h3><a href="#" class="work-link">Mishka</a></h3>
                 <p>Интернет-магазин вязаных игрушек</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -162,7 +165,7 @@
             <article>
               <img src="img/img-aplus.jpg" alt="Сайт A plus" width="360" height="576">
               <div>
-                <h3>A plus</h3>
+                <h3><a href="#" class="work-link">A plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -172,7 +175,7 @@
             <article>
               <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="360" height="576">
               <div>
-                <h3>Кваст</h3>
+                <h3><a href="#" class="work-link">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
@@ -180,7 +183,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">1</li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
@@ -189,15 +192,15 @@
 
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
-        <div class="map-contacts">
+        <div>
           <h3>nЁrds design studio</h3>
-          <address>
+          <address class="map-contacts">
             191186, Санкт-Петербург,<br>
             Ул. Б. Конюшенная, д. 19/8
+            <p>
+              тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a>
+            </p>
           </address>
-          <p>
-            тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          </p>
           <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
         </div>
         <p>
@@ -212,17 +215,17 @@
         <ul>
           <li>
             <a class="social-link" href="#">
-              <img src="img/vk.svg" alt="Мы в ВКонтакте" width="26" height="15">
+              Мы в ВКонтакте
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              <img src="img/fb.svg" alt="Мы в Фейсбук" width="12" height="22">
+              Мы в Фейсбук
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              <img src="img/insta.svg" alt="Мы в Инстаграме" width="21" height="21">
+              Мы в Инстаграме
             </a>
           </li>
         </ul>
@@ -248,9 +251,9 @@
           <label for="letter-text">Текст письма</label>
           <textarea name="comment" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button letter-form-button" type="submit">Отправить</button>
-        <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
   </body>

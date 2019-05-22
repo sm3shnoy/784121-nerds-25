@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс - Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -26,23 +29,23 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item slider-item-1">
             <article>
-              <span class="slider-slogan">Долго, дорого,<br>скрупулезно.</span>
+              <span>Долго, дорого,<br>скрупулезно.</span>
               <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
               <a class="button button-more" href="#">Узнать больше</a>
             </article>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slider-item-2">
             <article>
-              <span class="slider-slogan">Любим математику как никто другой</span>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <span>Любим математику<br>как никто другой</span>
+              <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
               <a class="button button-more" href="#">Узнать больше</a>
             </article>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slider-item-3">
             <article>
-              <span class="slider-slogan">Только ночь,<br>только хардкор</span>
+              <span>Только ночь,<br>только хардкор</span>
               <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
               <a class="button button-more" href="#">Узнать больше</a>
             </article>
@@ -50,13 +53,13 @@
         </ul>
         <ul class="control-list">
           <li class="control-item control-item-current">
-            <button class="slider-control-button" aria-label="Первый слайд">1</button>
+            <button class="slider-control-button">Первый слайд</button>
           </li>
           <li class="control-item">
-            <button class="slider-control-button" aria-label="Второй слайд">2</button>
+            <button class="slider-control-button">Второй слайд</button>
           </li>
           <li class="control-item">
-            <button class="slider-control-button" aria-label="Третий слайд">3</button>
+            <button class="slider-control-button">Третий слайд</button>
           </li>
         </ul>
       </section>
@@ -75,7 +78,7 @@
               </div>
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button" href="#">Заказать</a>
+              <a class="button services-button" href="#">Заказать</a>
             </article>
           </li>
           <li class="services-item">
@@ -85,7 +88,7 @@
               </div>
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button button-green" href="#">Заказать</a>
+              <a class="button services-button green-button" href="#">Заказать</a>
             </article>
           </li>
           <li class="services-item">
@@ -95,7 +98,7 @@
               </div>
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button button-yellow" href="#">Заказать</a>
+              <a class="button services-button yellow-button" href="#">Заказать</a>
             </article>
           </li>
         </ul>
@@ -105,7 +108,7 @@
         <h2 class="visually-hidden">О нас</h2>
         <span class="about-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
         <p>Исповедуем принципы минимальизма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <span>Выполняем заказы на разработку:</span>
+        <span class="about-order-list">Выполняем заказы на разработку:</span>
         <ul class="about-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
@@ -114,7 +117,7 @@
         <div class="about-features">
           <img src="img/nerds-big-logo.png" alt="Логотип дизайн-студии nёrd's" width="360" height="208">
           <span>С 2004 года любим точность во всём:</span>
-          <dl class="about-features-table">
+          <dl>
             <dt>Уровень самоотдачи</dt>
             <dd>146<sup>%</sup></dd>
             <dt>Соблюдение сроков</dt>
@@ -123,33 +126,33 @@
             <dd>50<sup>%</sup></dd>
           </dl>
         </div>
-        <ul class="about-partners-list">
-          <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-1.png" alt="Сайт HTMLAcademy" width="199" height="68"></a>
+        <ul class="partners-list">
+          <li class="partners-item">
+            <a class="partners-link" href="#"><img src="img/logo-1.png" alt="Сайт HTMLAcademy" width="199" height="68"></a>
           </li>
-          <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-2.png" alt="Сайт Барбершопа &laquo;Borodinski&raquo;" width="209" height="90"></a>
+          <li class="partners-item">
+            <a class="partners-link" href="#"><img src="img/logo-2.png" alt="Сайт Барбершопа &laquo;Borodinski&raquo;" width="209" height="90"></a>
           </li>
-          <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-3.png" alt="Сайт PiNK" width="185" height="52"></a>
+          <li class="partners-item">
+            <a class="partners-link" href="#"><img src="img/logo-3.png" alt="Сайт PiNK" width="185" height="52"></a>
           </li>
-          <li class="about-partners-item">
-            <a class="about-partners-link" href="#"><img src="img/logo-4.png" alt="Сайт MiSHKA" width="173" height="84"></a>
+          <li class="partners-item">
+            <a class="partners-link" href="#"><img src="img/logo-4.png" alt="Сайт MiSHKA" width="173" height="84"></a>
           </li>
         </ul>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
-        <div class="map-contacts">
+        <div>
           <h3>nЁrds design studio</h3>
-          <address>
+          <address class="map-contacts">
             191186, Санкт-Петербург,<br>
             Ул. Б. Конюшенная, д. 19/8
+            <p>
+              тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a>
+            </p>
           </address>
-          <p>
-            тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          </p>
           <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
         </div>
         <p>
@@ -164,17 +167,17 @@
         <ul>
           <li>
             <a class="social-link" href="#">
-              <img src="img/vk.svg" alt="Мы в ВКонтакте" width="26" height="15">
+              Мы в ВКонтакте
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              <img src="img/fb.svg" alt="Мы в Фейсбук" width="12" height="22">
+              Мы в Фейсбук
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              <img src="img/insta.svg" alt="Мы в Инстаграме" width="21" height="21">
+              Мы в Инстаграме
             </a>
           </li>
         </ul>
@@ -200,9 +203,9 @@
           <label for="letter-text">Текст письма</label>
           <textarea name="comment" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button letter-form-button" type="submit">Отправить</button>
-        <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button" aria-label="Закрыть">x</button>
     </section>
 
   </body>
