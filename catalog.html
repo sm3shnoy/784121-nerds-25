@@ -27,6 +27,7 @@
     </header>
 
     <main>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр работ</h2>
         <form class="form-setting-works">
@@ -38,11 +39,11 @@
                   <!-- Здесь будет ползунок -->
                   <li class="price-choice-item">
                     <label for="start-price">От</label>
-                    <input type="text" class="price-field" id="start-price">
+                    <input type="text" id="start-price">
                   </li>
                   <li class="price-choice-item">
                     <label for="end-price">До</label>
-                    <input type="text" class="price-field" id="end-price">
+                    <input type="text" id="end-price">
                   </li>
                 </ul>
               </fieldset>
@@ -52,15 +53,15 @@
                 <legend>Сетка:</legend>
                 <ul class="grid-choice-list">
                   <li class="grid-choice-item">
-                    <input type="radio" class="grid-check-button" id="adaptive-grid" value="adaptive" name="grid-type" checked>
+                    <input type="radio" disabled class="visually-hidden filter-input filter-input-checkbox" id="adaptive-grid" value="adaptive" name="grid-type" checked>
                     <label for="adaptive-grid">Адаптивная</label>
                   </li>
                   <li class="grid-choice-item">
-                    <input type="radio" class="grid-check-button" id="fix-grid" value="fix" name="grid-type">
+                    <input type="radio" class="visually-hidden filter-input filter-input-checkbox" id="fix-grid" value="fix" name="grid-type">
                     <label for="fix-grid">Фиксированная</label>
                   </li>
                   <li class="grid-choice-item">
-                    <input type="radio" class="grid-check-button" id="rubber-grid" value="rubber" name="grid-type">
+                    <input type="radio" class="visually-hidden filter-input filter-input-checkbox" id="rubber-grid" value="rubber" name="grid-type">
                     <label for="rubber-grid">Резиновая</label>
                   </li>
                 </ul>
@@ -68,7 +69,7 @@
             </li>
             <li class="form-setting-item">
               <fieldset>
-                <legend>Особенности:</legend>
+              <legend>Особенности:</legend>
                 <ul class="features-choice-list">
                   <li class="features-choice-item">
                     <input type="checkbox" name="pattern-features-slider" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
@@ -110,12 +111,12 @@
           <ul class="sort-order-list">
             <li class="sort-order-item sort-asc">
               <a href="#" class="sort-order-current">
-                <img src="img/icon-down-dir.svg" alt="Сортировка по возрастанию" width="11" height="10">
+              <img src="img/icon-down-dir.svg" alt="Сортировка по возрастанию" width="11" height="10">
               </a>
             </li>
             <li class="sort-order-item sort-desc">
               <a href="#">
-                <img src="img/icon-up-dir.svg" alt="Сортировка по убыванию" width="11" height="10">
+              <img src="img/icon-up-dir.svg" alt="Сортировка по убыванию" width="11" height="10">
               </a>
             </li>
           </ul>
@@ -123,60 +124,72 @@
         <ul class="works-list">
           <li class="works-item">
             <article>
-              <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="360" height="576">
+              <p>
+                <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">Sedona</a></h3>
-                <p>Информационный сайт для туристов</p>
+                <h3><a href="#" class="works-item-link">Sedona</a></h3>
+                <p class="works-item-text">Информационный сайт для туристов</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
           </li>
           <li class="works-item">
             <article>
-              <img src="img/img-pink.jpg" alt="Сайт Pink" width="360" height="576">
+              <p>
+                <img src="img/img-pink.jpg" alt="Сайт Pink" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">Pink app</a></h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <h3><a href="#" class="works-item-link">Pink app</a></h3>
+                <p class="works-item-text">Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
           </li>
           <li class="works-item">
             <article>
-              <img src="img/img-barbershop.jpg" alt="Сайт Barbershop" width="360" height="576">
+              <p>
+                <img src="img/img-barbershop.jpg" alt="Сайт Barbershop" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">Barbershop</a></h3>
-                <p>Сайт салона красоты для мужчин, да.</p>
+                <h3><a href="#" class="works-item-link">Barbershop</a></h3>
+                <p class="works-item-text">Сайт салона красоты для мужчин, да.</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
           </li>
           <li class="works-item">
             <article>
-              <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="360" height="576">
+              <p>
+                <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">Mishka</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <h3><a href="#" class="works-item-link">Mishka</a></h3>
+                <p class="works-item-text">Интернет-магазин вязаных игрушек</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
           </li>
           <li class="works-item">
             <article>
-              <img src="img/img-aplus.jpg" alt="Сайт A plus" width="360" height="576">
+              <p>
+                <img src="img/img-aplus.jpg" alt="Сайт A plus" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">A plus</a></h3>
-                <p>Лендинг курсов повышения квалификации</p>
+                <h3><a href="#" class="works-item-link">A plus</a></h3>
+                <p class="works-item-text">Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
           </li>
           <li class="works-item">
             <article>
-              <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="360" height="576">
+              <p>
+                <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="360" height="576">
+              </p>
               <div>
-                <h3><a href="#" class="work-link">Кваст</a></h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
+                <h3><a href="#" class="works-item-link">Кваст</a></h3>
+                <p class="works-item-text">Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
@@ -193,8 +206,8 @@
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
         <div>
-          <h3>nЁrds design studio</h3>
-          <address class="map-contacts">
+        <h3>nЁrds design studio</h3>
+        <address class="map-contacts">
             191186, Санкт-Петербург,<br>
             Ул. Б. Конюшенная, д. 19/8
             <p>
@@ -215,17 +228,17 @@
         <ul>
           <li>
             <a class="social-link" href="#">
-              Мы в ВКонтакте
+            Мы в ВКонтакте
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              Мы в Фейсбук
+            Мы в Фейсбук
             </a>
           </li>
           <li>
             <a class="social-link" href="#">
-              Мы в Инстаграме
+            Мы в Инстаграме
             </a>
           </li>
         </ul>
@@ -237,7 +250,7 @@
     </footer>
 
     <section class="modal modal-letter">
-      <h2>Напишите нам</h2>
+    <h2>Напишите нам</h2>
       <form class="letter-form" method="POST">
         <p>
           <label for="letter-username-field">Ваше имя:</label>
