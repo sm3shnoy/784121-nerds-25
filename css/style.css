@@ -100,8 +100,45 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
-/* Здесь будет слайдер */
+/* Слайдер */
 
+/* Слайдер в шапке */
+
+.slider {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item-1 {
+  background: #eeeeee url("../img/slide-1.png") no-repeat top right;
+}
+
+.slider-item-2 {
+  background: #eeeeee url("../img/slide-2.png") no-repeat top right;
+}
+
+.slider-item-3 {
+  background: #eeeeee url("../img/slide-3.png") no-repeat top right;
+}
+
+.slider-item span {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  color: #283136;
+}
+
+.control-list {
+  list-style: none;
+}
 
 /* Наши услуги */
 
@@ -229,6 +266,9 @@ span.about-order-list {
 .map-contacts a {
   color: #666666;
 }
+
+/* Фильтры */
+
 
 /* Наши работы */
 
