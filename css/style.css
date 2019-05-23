@@ -20,6 +20,34 @@ a {
   text-align: center;
 }
 
+.button {
+  display: inline-block;
+  /* height: 50px; */
+
+  font: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  /* line-height: 50px; */
+
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 /* МЕНЮ В ШАПКЕ */
 
 .main-header {
@@ -97,37 +125,9 @@ a {
   background: #eeeeee url("../img/slide-3.png") no-repeat top right;
 }
 
-.button {
-  display: inline-block;
-  height: 50px;
-
-  font: inherit;
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 500;
-  text-decoration: none;
-  line-height: 50px;
-
-  background-color: #fb565a;
-  border-radius: 2px;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #e74246;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #d7373b;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-.button-more {
+/* .button-more {
   width: 240px;
-}
+} */
 
 .control-list {
   list-style: none;
@@ -152,9 +152,9 @@ main {
   color: #283136;
 }
 
-.services-button {
+/* .services-button {
   width: 160px;
-}
+} */
 
 .green-button {
   background-color: #00ca74;
@@ -278,15 +278,11 @@ main {
   text-decoration: underline;
 }
 
-.button-letter {
+/* .button-letter {
   width: 219px;
-}
+} */
 
 /* Фильтр товаров */
-
-.form-setting label {
-  color: #283136;
-}
 
 .form-setting-list,
 .form-setting-list ul {
@@ -325,8 +321,10 @@ main {
   line-height: 20px; 
 }
 
+/* Место для стилей чекбоксов фильтров */
+
 .button-show {
-  width: 260px;
+  /* width: 260px; */
 
   font: inherit;
   line-height: 18px;
@@ -433,9 +431,9 @@ a.sort-order-current {
   text-align: center;
 }
 
-.works-item .button {
+/* .works-item .button {
   width: 200px;
-}
+} */
 
 .works-item .button:active {
   color: #ffffff;
@@ -446,24 +444,15 @@ a.sort-order-current {
 }
 
 .pagination-item {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
+  color: #000000;
 
-.pagination-item:last-child {
-  width: 260px;
-  height: 50px;
+  background-color: #ffffff;
 }
 
 .pagination-item a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-
   font: inherit;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 18px;
   text-align: center;
   color: #000000;
   font-weight: 500;
@@ -550,10 +539,8 @@ a.sort-order-current {
 }
 
 .letter-form button {
-  width: 260px;
-  height: 50px;
+  /* width: 260px;
+  height: 50px; */
 
   border: none;
 }
-
-
