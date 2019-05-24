@@ -30,93 +30,85 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр работ</h2>
-        <form class="form-setting-works">
-          <ul class="form-setting-list">
-            <li class="form-setting-item">
-              <fieldset>
-                <legend>Стоимость:</legend>
-                <ul class="price-choice-list">
-                  <!-- Здесь будет ползунок -->
-                  <li class="price-choice-item">
-                    <label for="start-price">От</label>
-                    <input type="text" id="start-price">
-                  </li>
-                  <li class="price-choice-item">
-                    <label for="end-price">До</label>
-                    <input type="text" id="end-price">
-                  </li>
-                </ul>
-              </fieldset>
-            </li>
-            <li class="form-setting-item">
-              <fieldset>
-                <legend>Сетка:</legend>
-                <ul class="grid-choice-list">
-                  <li class="grid-choice-item">
-                    <input type="radio" disabled class="visually-hidden filter-input filter-input-checkbox" id="adaptive-grid" value="adaptive" name="grid-type" checked>
-                    <label for="adaptive-grid">Адаптивная</label>
-                  </li>
-                  <li class="grid-choice-item">
-                    <input type="radio" class="visually-hidden filter-input filter-input-checkbox" id="fix-grid" value="fix" name="grid-type">
-                    <label for="fix-grid">Фиксированная</label>
-                  </li>
-                  <li class="grid-choice-item">
-                    <input type="radio" class="visually-hidden filter-input filter-input-checkbox" id="rubber-grid" value="rubber" name="grid-type">
-                    <label for="rubber-grid">Резиновая</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </li>
-            <li class="form-setting-item">
-              <fieldset>
-              <legend>Особенности:</legend>
-                <ul class="features-choice-list">
-                  <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features-slider" value="slider" class="pattern-checkbox-features" id="slider-feature" checked>
-                    <label for="slider-feature">Слайдер</label>
-                  </li>
-                  <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features-advantages-block" value="features-block" class="pattern-checkbox-features" id="block-feature">
-                    <label for="block-feature">Блок преимуществ</label>
-                  </li>
-                  <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features-news" value="news" class="pattern-checkbox-features" id="news-feature" checked>
-                    <label for="news-feature">Новости</label>
-                  </li>
-                  <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features-gallery" value="gallery" class="pattern-checkbox-features" id="gallery-feature">
-                    <label for="gallery-feature">Галерея</label>
-                  </li>
-                  <li class="features-choice-item">
-                    <input type="checkbox" name="pattern-features-basket" value="basket" class="pattern-checkbox-features" id="basket-feature">
-                    <label for="basket-feature">Корзина</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </li>
-          </ul>
-          <button type="submit" class="button button-show">Показать</button>
+        <form class="filter">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <ul class="price-list">
+              <!-- Здесь будет ползунок -->
+              <li class="price-item">
+                <label for="start-price">От</label>
+                <input type="text" id="start-price">
+              </li>
+              <li class="price-item">
+                <label for="end-price">До</label>
+                <input type="text" id="end-price">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul class="grid-list">
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" id="adaptive-grid" value="adaptive" name="grid-type" checked>
+                <label for="adaptive-grid">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" id="fix-grid" value="fix" name="grid-type">
+                <label for="fix-grid">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" class="visually-hidden filter-input filter-input-radio" id="rubber-grid" value="rubber" name="grid-type">
+                <label for="rubber-grid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+          <legend>Особенности:</legend>
+            <ul class="features-list">
+              <li class="filter-option">
+                <input type="checkbox" name="pattern-features-slider" value="slider" class="visually-hidden filter-input filter-input-checkbox" id="slider-feature" checked>
+                <label for="slider-feature">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="pattern-features-advantages" value="features-block" class="visually-hidden filter-input filter-input-checkbox" id="block-feature">
+                <label for="block-feature">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="pattern-features-news" value="news" class="visually-hidden filter-input filter-input-checkbox" id="news-feature" checked>
+                <label for="news-feature">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="pattern-features-gallery" value="gallery" class="visually-hidden filter-input filter-input-checkbox" id="gallery-feature">
+                <label for="gallery-feature">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="pattern-features-basket" value="basket" class="visually-hidden filter-input filter-input-checkbox" id="basket-feature">
+                <label for="basket-feature">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button show-button">Показать</button>
         </form>
       </section>
 
       <section class="works">
         <h2 class="visually-hidden">Наши работы</h2>
-        <div class="more-filtres">
+        <div class="more-filters">
           <h3>Сортировать</h3>
-          <ul class="sort-type-list">
-            <li class="sort-type-item"><a href="#" class="sort-type-current">По цене</a></li>
-            <li class="sort-type-item"><a href="#">По типу</a></li>
-            <li class="sort-type-item"><a href="#">По названию</a></li>
+          <ul>
+            <li class="sort-item"><a href="#" class="sort-current">По цене</a></li>
+            <li class="sort-item"><a href="#">По типу</a></li>
+            <li class="sort-item"><a href="#">По названию</a></li>
           </ul>
-          <ul class="sort-order-list">
-            <li class="sort-order-item sort-asc">
+          <ul>
+            <li class="sort-item sort-order sort-asc">
               <a href="#" class="sort-order-current">
-              <img src="img/icon-down-dir.svg" alt="Сортировка по возрастанию" width="11" height="10">
+                <img src="img/icon-down-dir.svg" alt="Сортировка по возрастанию" width="11" height="10">
               </a>
             </li>
-            <li class="sort-order-item sort-desc">
+            <li class="sort-item sort-order sort-desc">
               <a href="#">
-              <img src="img/icon-up-dir.svg" alt="Сортировка по убыванию" width="11" height="10">
+                <img src="img/icon-up-dir.svg" alt="Сортировка по убыванию" width="11" height="10">
               </a>
             </li>
           </ul>
