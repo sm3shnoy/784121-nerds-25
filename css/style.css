@@ -230,6 +230,117 @@ span.about-order-list {
   color: #666666;
 }
 
+/* Фильтры */
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.price-item {
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.price-item input {
+  font: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #283136;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-input label {
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.show-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: #dfdfdf;
+}
+
+.show-button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+}
+
+/* Сортировка работ по параметрам */
+
+.more-filters ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-item a:active,
+a.sort-current {
+  color: #000000;
+}
+
+.sort-order a {
+  opacity: 0.2;
+}
+
+.sort-order a:hover,
+.sort-order a:focus {
+  opacity: 0.4;
+}
+
+.sort-order a:active,
+a.sort-order-current {
+  opacity: 1;
+}
+
 /* Наши работы */
 
 .works-list {
