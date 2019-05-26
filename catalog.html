@@ -32,7 +32,7 @@
         <h2 class="visually-hidden">Фильтр работ</h2>
         <form class="filter">
           <fieldset>
-            <legend>Стоимость:</legend>
+            <legend class="filter-title filter-title-price">Стоимость:</legend>
             <ul class="price-list">
               <!-- Здесь будет ползунок -->
               <li class="price-item">
@@ -46,7 +46,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
+            <legend class="filter-title">Сетка:</legend>
             <ul class="grid-list">
               <li class="filter-option">
                 <input type="radio" class="visually-hidden filter-input filter-input-radio" id="adaptive-grid" value="adaptive" name="grid-type" checked>
@@ -63,7 +63,7 @@
             </ul>
           </fieldset>
           <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="filter-title">Особенности:</legend>
             <ul class="features-list">
               <li class="filter-option">
                 <input type="checkbox" name="pattern-features-slider" value="slider" class="visually-hidden filter-input filter-input-checkbox" id="slider-feature" checked>
@@ -87,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="button show-button">Показать</button>
+          <button type="submit" class="button grey-button">Показать</button>
         </form>
       </section>
 
