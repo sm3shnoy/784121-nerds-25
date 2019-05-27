@@ -10,6 +10,12 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -54,6 +60,12 @@ a {
   background-color: #eeeeee;
 }
 
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-top: 34px;
+}
+
 .main-header-logo:hover,
 .main-header-logo:focus {
   opacity: 0.8;
@@ -64,6 +76,10 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
   color: #000000;
   line-height: 1.88;
   font-weight: 500;
@@ -75,6 +91,8 @@ a {
 
 .site-navigation,
 .user-basket {
+  margin-top: 34px;
+
   list-style: none;
 }
 
@@ -139,8 +157,24 @@ a {
 
 /* Наши услуги */
 
+.services {
+  padding: 80px 0;
+}
+
 .services-list {
+  display: flex;
+  justify-content: flex-start;
+
   list-style: none;
+}
+
+.services-item {
+  width: 300px;
+  margin-left: 100px;
+}
+
+.services-item:first-child {
+  margin-left: 0;
 }
 
 .services-item h3 {
@@ -184,26 +218,70 @@ a {
 
 /* О нас */
 
+.about {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-info {
+  width: 650px;
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+
 .about-slogan {
+  display: block;
+  margin-bottom: 35px;
+
   font-size: 45px;
   line-height: 1;
   font-weight: 500;
 }
 
 .about p {
+  margin-bottom: 45px;
+
   color: #283136;
 }
 
 span.about-order-list {
+  display: block;
+  margin-bottom: 35px;
+
   font-weight: 700;
 }
 
 .about-list {
-  color: #283136
+  margin: 0;
+  padding: 0;
+
+  color: #283136;
+}
+
+.about-list li {
+  margin-bottom: 35px;
+}
+
+.about-features {
+  width: 360px;
 }
 
 .about-features span {
   font-weight: 700;
+}
+
+.about-features dl {
+  display: flex;
+}
+
+.about-features .percent-wrap {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .about-features dl,
@@ -227,8 +305,16 @@ span.about-order-list {
 /* Партнеры */
 
 .partners-list {
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
+
+.partners-item {
+  width: 298px;
+} 
 
 .partners-item a {
   opacity: 0.2;
@@ -245,13 +331,26 @@ span.about-order-list {
 
 /* Как нас найти */
 
+.map-contacts-wrapper {
+  width: 320px;
+  height: 310px;
+  padding: 55px 50px 47px 50px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+}
+
 .map h3 {
+  margin-bottom: 32px;
+
   font-size: 18px;
   line-height: 1.67;
   font-weight: 700;
 }
 
 .map-contacts {
+  margin-bottom: 37px;
+
   color: #666666;
   line-height: 1.13;
   font-style: normal;
@@ -261,7 +360,22 @@ span.about-order-list {
   color: #666666;
 }
 
+/* Каталог */
+
+.inner-page .main-header {
+  padding-bottom: 116px;
+}
+
+.main-wrapper {
+  display: flex;
+  padding-top: 63px;
+}
+
 /* Фильтры */
+
+.filters {
+  width: 260px;
+}
 
 .filter ul {
   margin: 0;
@@ -271,10 +385,22 @@ span.about-order-list {
 }
 
 .filter fieldset {
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   border: none;
+}
+
+fieldset.grid-field {
+  margin-top: 62px;
+}
+
+fieldset.features-field {
+  margin-top: 51px;
+}
+
+.filter .price-field {
+  margin-bottom: 62px;
 }
 
 .filter-title {
@@ -286,7 +412,19 @@ span.about-order-list {
 }
 
 .filter-title-price {
+  margin-bottom: 55px;
+
   letter-spacing: 0.18px;
+}
+
+.price-list {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.filter .grid-list,
+.filter .features-list {
+  padding-top: 20px;
 }
 
 .price-item {
@@ -295,7 +433,14 @@ span.about-order-list {
   text-transform: uppercase;
 }
 
+.filter-option:not(:first-of-type) {
+  margin-top: 17px;
+}
+
 .price-item input {
+  width: 80px;
+  height: 38px;
+
   font: inherit;
   font-size: 16px;
   line-height: 1.38;
@@ -321,6 +466,8 @@ span.about-order-list {
 }
 
 .grey-button {
+  margin-top: 48px;
+
   color: #000000;
 
   background-color: #eeeeee;
@@ -339,7 +486,15 @@ span.about-order-list {
 
 /* Сортировка работ по параметрам */
 
+.more-filters {
+  display: flex;
+  margin-bottom: 59px;
+}
+
 .more-filters h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 18px;
   line-height: 1;
   text-transform: uppercase;
@@ -350,7 +505,27 @@ span.about-order-list {
   margin: 0;
   padding: 0;
 
+  text-transform: uppercase;
+
   list-style: none;
+}
+
+.more-filters .sort-type-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+.more-filters .sort-order-list {
+  display: flex;
+}
+
+.sort-type-list .sort-item:not(:first-of-type) {
+  margin-left: 25px;
+}
+
+.sort-order-list .sort-item:last-of-type {
+  margin-left: 18px;
 }
 
 .sort-item a {
@@ -385,11 +560,42 @@ a.sort-order-current {
 
 /* Наши работы */
 
+.works {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 140px;
+}
+
 .works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  
   list-style: none;
 }
 
+.works-item {
+  width: 360px;
+  min-height: 576px;
+
+  text-align: center;
+}
+
+.works-description {
+  width: 360px;
+  height: 231px;
+  padding: 35px 10px 43px;
+  box-sizing: border-box;
+  
+  background-color: #eeeeee;
+}
+
 .works-item h3 {
+  margin-bottom: 25px;
+
   font-size: 18px;
   line-height: 1.67;
   text-align: center;
@@ -411,6 +617,8 @@ a.sort-order-current {
 }
 
 .works-item .works-item-text {
+  margin-bottom: 30px;
+
   line-height: 1.13;
   text-align: center;
   color: #666666;
@@ -421,12 +629,22 @@ a.sort-order-current {
 }
 
 .pagination-list {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 60px;
+
   list-style: none;
 }
 
 .pagination-item {
+  margin-right: 11px;
+
   line-height: 1.13;
   text-align: center;
+}
+
+.pagination-item:last-of-type {
+  margin-right: 0;
 }
 
 .pagination-item a {
@@ -465,7 +683,20 @@ a.sort-order-current {
 
 /* Footer */
 
+.main-footer-wrap {
+  display: flex;
+}
+
+.footer-social {
+  min-width: 260px;
+  display: flex;
+  margin-right: auto;
+}
+
 .footer-social ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -477,6 +708,8 @@ a.sort-order-current {
 }
 
 .footer-slogan {
+  display: block;
+
   color: #000000;
   font-size: 36px;
   line-height: 1;
@@ -484,6 +717,9 @@ a.sort-order-current {
 }
 
 .main-footer p {
+  margin-left: 140px;
+  flex-grow: 1;
+
   line-height: 1.38;
   color: #444444;
 }
