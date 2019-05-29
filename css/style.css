@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +15,7 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -20,7 +24,32 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .inner-page h1 {
+  margin: 0;
+
   font-size: 55px;
   line-height: 1;
   text-align: center;
@@ -62,8 +91,8 @@ a {
 
 .main-header-logo {
   width: 160px;
-  height: 65px;
-  margin-top: 34px;
+  margin-right: 202px;
+  margin-top: 49px;
 }
 
 .main-header-logo:hover,
@@ -77,8 +106,7 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 69px;
 
   color: #000000;
   line-height: 1.88;
@@ -89,15 +117,40 @@ a {
   background-color: #eeeeee;
 }
 
+.site-navigation {
+  width: 500px;
+}
+
+.user-basket {
+  max-width: 160px;
+  margin-left: auto;
+}
+
 .site-navigation,
 .user-basket {
-  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 76px;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
 
+.site-navigation li,
+.user-basket li {
+  padding-right: 48px;
+}
+
+.site-navigation li:last-child,
+.user-basket li:last-child {
+  padding-right: 0;
+}
+
 .site-navigation a,
 .user-basket a {
+  display: block;
+
   color: #000000;
 }
 
@@ -115,6 +168,12 @@ a {
 
 .site-navigation-current {
   border-bottom: 2px solid #fb565a;
+}
+
+a.site-navigation-current:hover,
+a.site-navigation-current:focus,
+a.site-navigation-current:active {
+  color: #000000;
 }
 
 /* Слайдер в шапке */
@@ -155,6 +214,10 @@ a {
   list-style: none;
 }
 
+main.container {
+  margin: 80px auto;
+}
+
 /* Наши услуги */
 
 .services {
@@ -164,17 +227,19 @@ a {
 .services-list {
   display: flex;
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 
 .services-item {
   width: 300px;
-  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.services-item:first-child {
-  margin-left: 0;
+.services-item:last-child {
+  margin-right: 0;
 }
 
 .services-item h3 {
@@ -185,6 +250,9 @@ a {
 }
 
 .services-item p {
+  margin-top: 0;
+  margin-bottom: 35px;
+
   font-size: 16px;
   line-height: 1.5;
   color: #283136;
@@ -229,9 +297,8 @@ a {
 }
 
 .about-info {
-  width: 650px;
-  padding-top: 40px;
-  padding-bottom: 75px;
+  width: 660px;
+  padding: 40px 0 75px;
 }
 
 .about-slogan {
@@ -244,6 +311,7 @@ a {
 }
 
 .about p {
+  margin-top: 0;
   margin-bottom: 45px;
 
   color: #283136;
@@ -269,6 +337,7 @@ span.about-order-list {
 
 .about-features {
   width: 360px;
+  margin-left: auto;
 }
 
 .about-features span {
@@ -308,13 +377,35 @@ span.about-order-list {
   min-height: 180px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
 
   list-style: none;
 }
 
 .partners-item {
-  width: 298px;
+  position: relative;
+
+  width: 280px;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } 
+
+.partners-list li + li::before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 0;
+  
+  width: 2px;
+  height: 52px;
+  margin-top: -26px;
+
+  background-color: #eeeeee;
+}
 
 .partners-item a {
   opacity: 0.2;
@@ -331,11 +422,23 @@ span.about-order-list {
 
 /* Как нас найти */
 
+.map {
+  position: relative;
+
+  width: 100%;
+  height: 416px;
+
+  background: #ffffff url("../img/map.jpg") no-repeat top center;
+}
+
 .map-contacts-wrapper {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+
   width: 320px;
   height: 310px;
   padding: 55px 50px 47px 50px;
-  box-sizing: border-box;
 
   background-color: #ffffff;
 }
@@ -360,15 +463,19 @@ span.about-order-list {
   color: #666666;
 }
 
+.map-contacts p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 /* Каталог */
 
 .inner-page .main-header {
-  padding-bottom: 116px;
+  padding-bottom: 107px;
 }
 
 .main-wrapper {
   display: flex;
-  padding-top: 63px;
 }
 
 /* Фильтры */
@@ -561,9 +668,9 @@ a.sort-order-current {
 /* Наши работы */
 
 .works {
+  width: 760px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   margin-left: 140px;
 }
 
@@ -588,7 +695,6 @@ a.sort-order-current {
   width: 360px;
   height: 231px;
   padding: 35px 10px 43px;
-  box-sizing: border-box;
   
   background-color: #eeeeee;
 }
@@ -630,8 +736,7 @@ a.sort-order-current {
 
 .pagination-list {
   display: flex;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
 
   list-style: none;
 }
@@ -683,12 +788,12 @@ a.sort-order-current {
 
 /* Footer */
 
-.main-footer-wrap {
+.main-footer .container {
   display: flex;
 }
 
 .footer-social {
-  min-width: 260px;
+  width: 260px;
   display: flex;
   margin-right: auto;
 }
@@ -716,9 +821,9 @@ a.sort-order-current {
   font-weight: 700;
 }
 
-.main-footer p {
-  margin-left: 140px;
-  flex-grow: 1;
+.footer-text {
+  width: 760px;
+  margin: 0;
 
   line-height: 1.38;
   color: #444444;
@@ -727,5 +832,9 @@ a.sort-order-current {
 /* Модальное окно */
 
 .modal {
+  display: none;
+}
+
+.slider {
   display: none;
 }
