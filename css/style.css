@@ -52,10 +52,15 @@ input[type="radio"].visually-hidden {
 
 .inner-page h1 {
   margin: 0;
+  padding-top: 68px;
 
   font-size: 55px;
   line-height: 1;
   text-align: center;
+}
+
+.inner-page main.container {
+  margin-top: 55px;
 }
 
 .button {
@@ -64,6 +69,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   color: #ffffff;
   font-size: 16px;
+  line-height: 1;
   text-align: center;
   font-weight: 500;
   text-decoration: none;
@@ -71,7 +77,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 
   background-color: #fb565a;
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
 }
 
@@ -111,8 +117,7 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   display: flex;
   align-items: center;
-  padding: 49px 0 18px; 
-  margin-bottom: 69px;
+  padding: 49px 0 0; 
 
   color: #000000;
   line-height: 1.88;
@@ -204,54 +209,137 @@ a.site-navigation-current:active {
 /* Слайдер в шапке */
 
 .slider {
-  color: #000000;
-
+  position: relative;
+  
   background-color: #eeeeee;
 }
 
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+
+  box-sizing: content-box;
+}
+
+.slider-controls label {
+  position: relative;
+  
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  
+  border-radius: 50%;
+}
+
 .slider-list {
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
 
-.slider-item-1 {
-  background: #eeeeee url("../img/slide-1.png") no-repeat top right;
+.slider-item {
+  display: none;
+  padding: 69px 0 80px 0;
 }
 
-.slider-item-2 {
-  background: #eeeeee url("../img/slide-2.png") no-repeat top right;
+.slider-item:nth-child(1) {
+  background: url("../img/slide-1.png") no-repeat 93% 9px;
 }
 
-.slider-item-3 {
-  background: #eeeeee url("../img/slide-3.png") no-repeat top right;
+.slider-item:nth-child(2) {
+  background: url("../img/slide-2.png") no-repeat 100% 0;
 }
 
-.slider-item span {
+.slider-item:nth-child(3) {
+  background: url("../img/slide-3.png") no-repeat 100% 20px;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  
   font-size: 55px;
-  line-height: 1;
+  line-height: 55px;
   font-weight: 500;
 }
 
 .slider-item p {
-  color: #283136;
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
 }
-
-.button-more {
-  padding: 19px 55px 18px 53px;
-}
-
-.control-list {
-  list-style: none;
-}
-
 
 main.container {
   margin: 80px auto 0;
 }
 
+.slider-item-button {
+  padding: 17px 53px 17px 55px;
+}
+
 /* Наши услуги */
 
 .services {
-  padding: 80px 0;
+  padding-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -301,7 +389,7 @@ main.container {
 }
 
 .services-button {
-  padding: 13px 40px;
+  padding: 17px 39px;
 }
 
 .green-button {
@@ -506,14 +594,20 @@ span.about-order-list {
   background: #ffffff url("../img/map.jpg") no-repeat top center;
 }
 
+.map .container {
+  position: relative;
+
+  height: inherit;
+}
+
 .map-contacts-wrapper {
   position: absolute;
   top: 13%;
-  left: 2%;
+  left: 20px;
 
   width: 320px;
   height: 310px;
-  padding: 55px 48px 47px;
+  padding: 48px 50px;
 
   background-color: #ffffff;
 }
@@ -529,7 +623,7 @@ span.about-order-list {
 }
 
 .map-contacts {
-  margin-bottom: 29px;
+  margin-bottom: 36px;
 
   color: #666666;
   line-height: 1.13;
@@ -546,7 +640,7 @@ span.about-order-list {
 }
 
 .button-letter {
-  padding: 13px 44px;
+  padding: 17px 44px;
 }
 
 /* Каталог */
@@ -602,7 +696,7 @@ fieldset.features-field {
 .filter-title-price {
   margin-bottom: 55px;
 
-  letter-spacing: 0.18px;
+  letter-spacing: 0.58px;
 }
 
 .price-list {
@@ -676,7 +770,8 @@ fieldset.features-field {
 
 .more-filters {
   display: flex;
-  margin-bottom: 59px;
+  margin-bottom: 51px;
+  margin-top: 2px;
 }
 
 .more-filters h3 {
@@ -701,7 +796,7 @@ fieldset.features-field {
 .more-filters .sort-type-list {
   display: flex;
   margin-left: auto;
-  margin-right: 48px;
+  margin-right: 51px;
 }
 
 .more-filters .sort-order-list {
@@ -766,18 +861,45 @@ a.sort-order-current {
 }
 
 .works-item {
+  position: relative;
+
   width: 360px;
-  min-height: 576px;
+  max-height: 616px;
+  margin-bottom: 33px;
 
   text-align: center;
 }
 
+.browser {
+  width: 360px;
+  height: 40px;
+
+  background: url("../img/browser.svg") no-repeat top center;
+  opacity: 0.12;
+}
+
+.works-item p {
+  margin: 0;
+}
+
 .works-description {
+  position: absolute;
+  bottom: 0;
+
+  display: none;
   width: 360px;
   height: 231px;
   padding: 35px 10px 43px;
   
   background-color: #eeeeee;
+}
+
+.works-item:hover .works-description {
+  display: block;
+}
+
+.works-item:hover .browser {
+  opacity: 1;
 }
 
 .works-item h3 {
@@ -822,7 +944,9 @@ a.sort-order-current {
 
 .pagination-list {
   display: flex;
-  margin: 60px auto 0;
+  flex-wrap: wrap;
+  margin: 27px auto 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -839,7 +963,11 @@ a.sort-order-current {
 }
 
 .pagination-item a {
+  display: inline-block;
+  padding: 19px 23px 19px 21px;
+
   color: #000000;
+  vertical-align: middle;
 
   background-color: #eeeeee;
 }
@@ -953,9 +1081,5 @@ a.sort-order-current {
 /* Модальное окно */
 
 .modal {
-  display: none;
-}
-
-.slider {
   display: none;
 }
