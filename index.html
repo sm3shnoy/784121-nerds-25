@@ -29,45 +29,35 @@
       <h1 class="visually-hidden">Дизайн-студия nёrd's</h1>
 
       <section class="slider">
-        <div class="container">
-          <h2 class="visually-hidden">Слайдер</h2>
-          <ul class="slider-list">
-            <li class="slider-item slider-item-1">
-              <article>
-                <span>Долго, дорого,<br>скрупулезно.</span>
-                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                <a class="button button-more" href="#">Узнать больше</a>
-              </article>
-            </li>
-            <li class="slider-item slider-item-2">
-              <article>
-                <span>Любим математику<br>как никто другой</span>
-                <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-                <a class="button button-more" href="#">Узнать больше</a>
-              </article>
-            </li>
-            <li class="slider-item slider-item-3">
-              <article>
-                <span>Только ночь,<br>только хардкор</span>
-                <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-                <a class="button button-more" href="#">Узнать больше</a>
-              </article>
-            </li>
-          </ul>
-          <ul class="control-list">
-            <li class="control-item control-item-current">
-              <button class="slider-control-button">Первый слайд</button>
-            </li>
-            <li class="control-item">
-              <button class="slider-control-button">Второй слайд</button>
-            </li>
-            <li class="control-item">
-              <button class="slider-control-button">Третий слайд</button>
-            </li>
-          </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
-      </section>
-
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>  
+      </div>
+    </section>
     </header>
 
     <main class="container">
@@ -163,17 +153,19 @@
     </main>
 
     <section class="map">
-      <h2 class="visually-hidden">Как нас найти?</h2>
-      <div class="map-contacts-wrapper">
-        <h3>nЁrds design studio</h3>
-        <address class="map-contacts">
-          191186, Санкт-Петербург,<br>
-          Ул. Б. Конюшенная, д. 19/8
-          <p>
-            тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a>
-          </p>
-        </address>
-        <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
+      <div class="container">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <div class="map-contacts-wrapper">
+          <h3>nЁrds design studio</h3>
+          <address class="map-contacts">
+            191186, Санкт-Петербург,<br>
+            Ул. Б. Конюшенная, д. 19/8
+            <p>
+              тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a>
+            </p>
+          </address>
+          <a class="button button-letter" href="mailto:email@mail.ru">Напишите нам</a>
+        </div>
       </div>
     </section>
 
