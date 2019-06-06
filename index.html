@@ -29,35 +29,35 @@
       <h1 class="visually-hidden">Дизайн-студия nёrd's</h1>
 
       <section class="slider">
-      <div class="container">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <input class="visually-hidden slide-1" type="radio" id="slide-1" name="toggle" checked>
+          <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle">
+          <input class="visually-hidden slide-3" type="radio" id="slide-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="slide-1">Первый слайд</label>
+            <label class="slider-controls-item slider-controls-item--2" for="slide-2">Второй слайд</label>
+            <label class="slider-controls-item slider-controls-item--3" for="slide-3">Третий слайд</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+            </li>
+          </ul>  
         </div>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3>Долго, дорого,<br> скрупулезно.</h3>
-            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Только ночь,<br> только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
-          </li>
-        </ul>  
-      </div>
-    </section>
+      </section>
     </header>
 
     <main class="container">
@@ -203,19 +203,19 @@
     <section class="modal modal-letter">
     <h2>Напишите нам</h2>
       <form class="letter-form" method="POST">
-        <p>
+        <p class="form-group">
           <label for="letter-username-field">Ваше имя:</label>
           <input type="text" name="name" id="letter-username-field" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="form-group">
           <label for="letter-email-field">Ваше e-mail:</label>
-          <input type="text" name="email" id="letter-email-field" placeholder="email@example.com">
+          <input type="email" name="email" id="letter-email-field" placeholder="email@example.com">
         </p>
-        <p>
+        <p class="form-group">
           <label for="letter-text">Текст письма</label>
           <textarea name="comment" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button submit-form" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
