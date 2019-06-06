@@ -36,14 +36,22 @@
             <fieldset class="filter-price">
               <legend class="filter-title filter-title-price">Стоимость:</legend>
               <ul class="price-list">
-                <!-- Здесь будет ползунок -->
-                <li class="price-item">
-                  <label for="start-price">От</label>
-                  <input type="text" id="start-price">
+                <li class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
                 </li>
-                <li class="price-item">
+                <li class="price-item min-price">
+                  <label for="start-price">От</label>
+                  <input type="text" id="start-price" value="0">
+                </li>
+                <li class="price-item max-price">
                   <label for="end-price">До</label>
-                  <input type="text" id="end-price">
+                  <input type="text" id="end-price" value="15000">
                 </li>
               </ul>
             </fieldset>
