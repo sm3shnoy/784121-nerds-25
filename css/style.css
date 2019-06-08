@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page h1 {
   margin: 0;
-  padding-top: 68px;
+  padding-top: 78px;
 
   font-size: 55px;
   line-height: 1;
@@ -101,8 +101,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   width: 160px;
-  /* margin-right: 202px; */
-  /* margin-top: 49px; */
+  height: 65px;
 }
 
 .main-header-logo:hover,
@@ -132,7 +131,7 @@ input[type="radio"].visually-hidden {
 .user-basket {
   display: flex;
   flex-wrap: wrap;
-  margin: 9px 0 0;
+  margin: 19px 0 0;
   padding-left: 0;
 
   list-style: none;
@@ -212,6 +211,10 @@ a.site-navigation-current:active {
   position: relative;
   
   background-color: #eeeeee;
+}
+
+.slider .container {
+  padding-top: 10px;
 }
 
 .slider-controls {
@@ -428,7 +431,7 @@ main.container {
 .about-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 49px;
+  padding-bottom: 67px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -467,10 +470,32 @@ main.container {
   padding: 0;
 
   color: #283136;
+
+  list-style: none;
 }
 
 .about-list li {
+  position: relative;
+
+  padding-left: 36px;
   margin-bottom: 24px;
+}
+
+.about-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
 }
 
 .about-features {
@@ -605,6 +630,7 @@ main.container {
   position: absolute;
   top: 13%;
   left: 20px;
+  z-index: 2;
 
   width: 320px;
   height: 310px;
@@ -644,6 +670,13 @@ main.container {
   padding: 17px 44px;
 }
 
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 /* Каталог */
 
 .inner-page .main-header {
@@ -675,11 +708,11 @@ main.container {
 }
 
 fieldset.grid-field {
-  margin-top: 62px;
+  margin-top: 52px;
 }
 
 fieldset.features-field {
-  margin-top: 51px;
+  margin-top: 45px;
 }
 
 .filter .price-field {
@@ -704,9 +737,12 @@ fieldset.features-field {
   margin-bottom: 60px;
 }
 
-.filter .grid-list,
+.filter .grid-list {
+  padding-top: 17px;
+}
+
 .filter .features-list {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .range-filter {
@@ -776,14 +812,18 @@ fieldset.features-field {
   text-transform: uppercase;
 }
 
-.filter-option:not(:first-of-type) {
-  margin-top: 17px;
+.grid-list .filter-option:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.features-list .filter-option:not(:first-of-type) {
+  margin-top: 20px;
 }
 
 .price-item input {
   width: 80px;
   padding: 8px 10px;
-  margin-left: 10px;
+  margin-left: 8px;
 
   font: inherit;
   font-size: 16px;
@@ -795,6 +835,90 @@ fieldset.features-field {
   border-radius: 5px;
   border: none;
 }
+
+.filter-option {
+  padding-left: 36px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  user-select: none;
+}
+
+/* .filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/radio-off.svg") no-repeat top center;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/radio-on.svg") no-repeat top center;
+  opacity: 0.4;
+}
+
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:hover:focus {
+  opacity: 1;
+}
+
+.filter-input-radio + label:hover:disabled {
+  opacity: 0.1;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -34px;
+
+  width: 23px;
+  height: 23px;
+
+  background: url("../img/checkbox-off.svg") no-repeat top center;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -34px;
+
+  width: 27px;
+  height: 23px;
+
+  background: url("../img/checkbox-on.svg") no-repeat top center;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox + label:hover:focus {
+  opacity: 1;
+}
+
+.filter-input-checkbox + label:hover:disabled {
+  opacity: 0.1;
+} */
 
 .filter-input + label {
   line-height: 1.25;
@@ -812,6 +936,7 @@ fieldset.features-field {
 
 .grey-button {
   margin-top: 48px;
+  padding: 18px 88px;
 
   color: #000000;
 
@@ -834,7 +959,7 @@ fieldset.features-field {
 .more-filters {
   display: flex;
   margin-bottom: 51px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .more-filters h3 {
@@ -1007,7 +1132,7 @@ a.sort-order-current {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 27px auto 0;
+  margin-top: 27px;
   padding: 0;
 
   list-style: none;
@@ -1026,7 +1151,7 @@ a.sort-order-current {
 
 .pagination-item a {
   display: inline-block;
-  padding: 19px 23px 19px 21px;
+  padding: 19px 21px;
 
   color: #000000;
   vertical-align: middle;
@@ -1156,7 +1281,7 @@ a.sort-order-current {
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-.modal h2 {
+/* .modal h2 {
   margin: 0;
   margin-bottom: 49px;
 
@@ -1253,4 +1378,4 @@ a.sort-order-current {
   background: url("../img/close-cross.svg") no-repeat top center;
   opacity: 0.3;
   border: 0;
-}
+} */
