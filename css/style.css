@@ -242,6 +242,8 @@ a.site-navigation-current:active {
   height: 18px;
   padding: 8px;
   
+  vertical-align: middle;
+  
   border-radius: 50%;
   cursor: pointer;
 }
@@ -365,8 +367,7 @@ main.container {
 
 .services-item div {
   margin-bottom: 24px;
-
-  line-height: 0;
+  display: flex;
 }
 
 .services-item:nth-of-type(3n) {
@@ -433,7 +434,7 @@ main.container {
 .about-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 67px;
+  padding-bottom: 73px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -548,7 +549,7 @@ main.container {
 }
 
 .about-features dd {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
   
   font-size: 45px;
   line-height: 1; /* По макету 10px */
@@ -1065,7 +1066,7 @@ a.sort-order-current {
   width: 760px;
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
+  margin: 0 0 45px 140px;
 }
 
 .works-list {
