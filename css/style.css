@@ -168,7 +168,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-basket a:hover,
-.user-basket a:hover {
+.user-basket a:focus {
   color: #fb565a;
 }
 
@@ -316,6 +316,12 @@ a.site-navigation-current:active {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+.slide-1:focus ~ .slider-controls .slider-controls-item--1::after,
+.slide-2:focus ~ .slider-controls .slider-controls-item--2::after,
+.slide-3:focus ~ .slider-controls .slider-controls-item--3::after {
+  box-shadow: 0 0 0 2px #9dbff6;
 }
 
 .slider-item h3 {
@@ -654,6 +660,7 @@ main.container {
 }
 
 .map-substrate img {
+  width: 100%;
   height: inherit;
 }
 
@@ -706,6 +713,8 @@ main.container {
   top: 0;
   left: 0;
   z-index: 1;
+
+  width: 100%;
 }
 
 /* Каталог */
@@ -879,7 +888,7 @@ fieldset.features-field {
   user-select: none;
 }
 
-/* .filter-input-radio + label::before {
+.filter-input-radio + label::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -907,7 +916,7 @@ fieldset.features-field {
 }
 
 .filter-input-radio + label:hover::before,
-.filter-input-radio + label:hover:focus {
+.filter-input-radio + label:focus::before {
   opacity: 1;
 }
 
@@ -943,26 +952,26 @@ fieldset.features-field {
 }
 
 .filter-input-checkbox + label:hover::before,
-.filter-input-checkbox + label:hover:focus {
+.filter-input-checkbox + label:focus::before {
   opacity: 1;
 }
 
 .filter-input-checkbox + label:hover:disabled {
   opacity: 0.1;
-} */
+}
 
 .filter-input + label {
   line-height: 1.25;
   color: #283136;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #283136;
-}
-
 .filter-input:disabled + label {
   color: rgba(40, 49, 54, 0.3);
+}
+
+.filter-input-radio:focus + label,
+.filter-input-checkbox:focus + label {
+  box-shadow: 0 0 0 2px #9dbff6;
 }
 
 .grey-button {
@@ -1112,11 +1121,13 @@ a.sort-order-current {
   background-color: #eeeeee;
 }
 
-.works-item:hover .works-description {
+.works-item:hover .works-description,
+.works-item:focus .works-description {
   display: block;
 }
 
-.works-item:hover .browser {
+.works-item:hover .browser,
+.works-item:focus .browser {
   opacity: 1;
 }
 
@@ -1324,7 +1335,7 @@ a.sort-order-current {
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-/* .modal h2 {
+.modal h2 {
   margin: 0;
   margin-bottom: 49px;
 
@@ -1421,4 +1432,4 @@ a.sort-order-current {
   background: url("../img/close-cross.svg") no-repeat top center;
   opacity: 0.3;
   border: 0;
-} */
+}
