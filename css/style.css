@@ -1091,6 +1091,8 @@ a.sort-order-current {
 .works-item {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   width: 360px;
   max-height: 616px;
   margin-bottom: 33px;
@@ -1122,7 +1124,7 @@ a.sort-order-current {
 }
 
 .works-item:hover .works-description,
-.works-item:focus .works-description {
+.works-item:focus-within .works-description {
   display: block;
 }
 
