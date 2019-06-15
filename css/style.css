@@ -1366,13 +1366,15 @@ a.sort-order-current {
 .modal {
   position: fixed;
   bottom: 240px;
-  left: 50%;
+  left: 50%; 
   z-index: 100;
 
   display: none;
   width: 960px;
+  /* margin-left: 100px;
+  margin-bottom: 100px; */
   margin-left: -480px;
-  padding: 73px 100px 84px;
+  padding: 68px 100px 84px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1390,7 +1392,7 @@ a.sort-order-current {
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 41px;
 
   font-size: 45px;
   line-height: 1;
@@ -1412,7 +1414,7 @@ a.sort-order-current {
 }
 
 .form-group label {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 
   font-size: 16px;
   line-height: 1.13;
@@ -1422,7 +1424,8 @@ a.sort-order-current {
 
 .form-group input {
   width: 360px;
-  padding: 18px 15px;
+  height: 50px;
+  padding: 14px 13px;
   margin-bottom: 36px;
 
   font-size: 16px;
@@ -1434,7 +1437,7 @@ a.sort-order-current {
 .form-group textarea {
   width: 760px;
   height: 118px;
-  padding: 14px 15px;
+  padding: 14px 13px;
 
   font: inherit;
   font-size: 16px;
@@ -1468,8 +1471,8 @@ a.sort-order-current {
 }
 
 .submit-form {
-  padding: 18px 82px;
-  margin-top: 47px;
+  padding: 17px 84px;
+  margin-top: 48px;
 }
 
 .modal-close {
