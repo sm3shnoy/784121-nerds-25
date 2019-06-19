@@ -292,15 +292,15 @@ a.site-navigation-current:active {
 }
 
 .slider-item:nth-child(1) {
-  background: url("../img/slide-1.png") no-repeat 93% 9px;
+  background: #eeeeee url("../img/slide-1.png") no-repeat 93% 9px;
 }
 
 .slider-item:nth-child(2) {
-  background: url("../img/slide-2.png") no-repeat 100% 0;
+  background: #eeeeee url("../img/slide-2.png") no-repeat 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background: url("../img/slide-3.png") no-repeat 100% 20px;
+  background: #eeeeee url("../img/slide-3.png") no-repeat 100% 20px;
 }
 
 .slide-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -457,7 +457,6 @@ main.container {
 
 .about {
   padding-top: 40px;
-  padding-bottom: 80px;
 }
 
 .about-wrapper {
@@ -599,6 +598,10 @@ main.container {
 }
 
 /* Партнеры */
+
+.partners {
+  margin-bottom: 80px;
+}
 
 .partners-list {
   min-height: 180px;
@@ -1262,8 +1265,6 @@ a.sort-order-current {
 }
 
 .pagination-item {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 50px;
   height: 50px;
   margin-right: 11px;
@@ -1271,7 +1272,6 @@ a.sort-order-current {
 
 .pagination-item:last-of-type {
   margin-right: 0;
-  width: auto;
 }
 
 .pagination-item a {
@@ -1291,9 +1291,15 @@ a.sort-order-current {
 
   color: #000000;
   background-color: #eeeeee;
+
+  overflow: hidden;
 }
 
-.pagination-item:last-of-type a {
+.pagination-item-next {
+  width: 260px;
+}
+
+.pagination-item-next a {
   padding-left: 78px;
   padding-right: 78px;
 
@@ -1520,7 +1526,7 @@ a.sort-order-current {
 
 .modal {
   position: fixed;
-  bottom: 240px;
+  top: calc(50% - 314px);
   left: 50%; 
   z-index: 100;
 
