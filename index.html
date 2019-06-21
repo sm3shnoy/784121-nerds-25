@@ -35,25 +35,31 @@
           <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle">
           <input class="visually-hidden slide-3" type="radio" id="slide-3" name="toggle">
           <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item--1" for="slide-1">Первый слайд</label>
-            <label class="slider-controls-item slider-controls-item--2" for="slide-2">Второй слайд</label>
-            <label class="slider-controls-item slider-controls-item--3" for="slide-3">Третий слайд</label>
+            <label class="slider-controls-item slider-controls-item--1" for="slide-1" aria-label="Первый слайд">1</label>
+            <label class="slider-controls-item slider-controls-item--2" for="slide-2" aria-label="Второй слайд">2</label>
+            <label class="slider-controls-item slider-controls-item--3" for="slide-3" aria-label="Третий слайд">3</label>
           </div>
           <ul class="slider-list">
             <li class="slider-item">
-              <h3>Долго, дорого,<br> скрупулезно.</h3>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-item-inner">
+                <h3>Долго, дорого,<br> скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>
             </li>
             <li class="slider-item">
-              <h3>Любим математику как никто другой</h3>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-item-inner">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>
             </li>
             <li class="slider-item">
-              <h3>Только ночь,<br> только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
+              <div class="slider-item-inner">
+                <h3>Только ночь,<br> только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </div>
             </li>
           </ul>  
         </div>
@@ -140,22 +146,22 @@
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list">
           <li class="partners-item">
-            <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTMLAcademy">
               <img src="img/logo-1.png" alt="Сайт HTMLAcademy" width="199" height="68">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="#">
+            <a class="partners-link" href="#" aria-label="Сайт Барбершопа Borodinski">
               <img src="img/logo-2.png" alt="Сайт Барбершопа &laquo;Borodinski&raquo;" width="209" height="90">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="#">
+            <a class="partners-link" href="#" aria-label="Сайт PiNK">
               <img src="img/logo-3.png" alt="Сайт PiNK" width="185" height="52">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="#">
+            <a class="partners-link" href="#" aria-label="Сайт MiSHKA">
               <img src="img/logo-4.png" alt="Сайт MiSHKA" width="173" height="84">
             </a>
           </li>
@@ -190,17 +196,17 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-link" href="#">
+              <a class="social-link" href="#" aria-label="Мы ВКонтакте">
                 <img src="img/vk.svg" alt="Мы ВКонтакте" width="26" height="15">
               </a>
             </li>
             <li>
-              <a class="social-link" href="#">
+              <a class="social-link" href="#" aria-label="Мы в Фейсбук">
                 <img src="img/fb.svg" alt="Мы в Фейсбук" width="12" height="22">
               </a>
             </li>
             <li>
-              <a class="social-link" href="#">
+              <a class="social-link" href="#" aria-label="Мы в Инстаграм">
                 <img src="img/insta.svg" alt="Мы в Инстаграм" width="21" height="21">
               </a>
             </li>
