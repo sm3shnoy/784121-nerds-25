@@ -1201,6 +1201,8 @@ a.sort-order-current {
   display: none;
   width: 360px;
   padding: 28px 80px 41px;
+
+  word-break: break-word;
   
   background-color: #eeeeee;
 }
@@ -1248,6 +1250,7 @@ a.sort-order-current {
 }
 
 .works-item .button {
+  max-width: 200px;
   padding: 17px 60px;
 }
 
